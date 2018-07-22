@@ -76,7 +76,7 @@ Open  https://labs.play-with-docker.com/ and start a new session.
 Click "Add New Instance" to create a single Docker host (more can be added later)
 ```
 
- ### Setup a Docker Swarm master node deploy OpenFaaS
+ ### Setup a Docker Swarm master node and deploy OpenFaaS
  
  ```
  $ docker swarm init --advertise-addr eth0 && \
