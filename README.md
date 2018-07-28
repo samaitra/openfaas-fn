@@ -38,13 +38,13 @@ $ curl -sSL https://cli.openfaas.com | sudo sh
 ### Get the java template 
 
 ```
-$ faas-cli template pull https://github.com/openfaas-incubator/java-template
+$ faas-cli template pull
 ```
 
 ### Create new function
 
 ```
-$ faas-cli new --lang java run
+$ faas-cli new --lang java8 java-function
 ```
 ### Build function 
 
@@ -109,6 +109,12 @@ $ faas-cli new --lang java run
 
 ```
 $ faas-cli build -f run.yml
+```
+
+### Login in faas http gateway
+```
+echo -n YOUR_HTTP_GATEWAY_PASSWORD_GOES_HERE | faas-cli login --username=admin --password-stdin
+
 ```
 
 ### Deploy your function
